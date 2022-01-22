@@ -546,3 +546,12 @@ git commit-tree treeID -p parentID
 ```
 Create a New commit object from the given tree object and parent commit. Returns the ID of the new commit object.
 
+# [14. Quick References taken from other references]()
+
+Console output:
+
+```console
+$ git branch -m old-name-branch new-name-branch
+```
+
+Rename a branch
