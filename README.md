@@ -555,3 +555,71 @@ $ git branch -m old-name-branch new-name-branch
 ```
 
 Rename a branch
+
+# [15. Merging 2 git reporsitories into One, keeping history]()
+
+1. Create a Merge-2-Unrelated-Projects directory
+2. Inside Merge-2-Unrelated-Projects clone both repostories, Example: trad3 and DictEnEsScript
+3. Change to trad3 directory repository (4 years old).
+4. Type this command:
+
+```console
+$ filter-branch --index-filter \ 
+'git ls-files -s | sed "s-control+v, TAB\"-&trad3/-" |
+GIT_INDEX_FILE=$GIT_INDEX_FILE.new \
+git update-index --index-info && 
+mv "$GIT_INDEX_FILE.new" "$GIT_INDEX_FILE"' HEAD
+```
+
+> Remember the line where it says `trad3`
+
+5. Create a new repo, where first and second project are located, in this case I will call it DictEnEs (shorter)
+
+```console
+$ mkdir DictEnEs
+```
+
+Then: 
+
+```console
+$ cd DictEnEs; git init
+```
+
+4. Add the 2 repos as remote repos for the new "DictEnEs" 
+
+```console
+$ git remote add --fetch trad3 ../trad3
+$ git remote add --fetch 
+DictEnEsScript ../DictEnEsScript
+```
+
+5. Merge the 2 remote repos
+
+```console
+git merge trad3/master --allow-unrelated-histories
+```
+
+6. Take a look and see that the log is present:
+
+```console
+$ git log
+```
+
+7. Move these new files into a new directory to avoid conflicts, `mkdir OldTrad3Repository` and move all files.
+8. Create a new commit with these new files
+
+```console
+$ git add .; git commit -m "add files that comes from old trad3 repository"
+```
+
+9. Now merge the files that come from the second repository
+
+```console
+$ git merge DictEnEsScript/master --allow-unrelated-histories
+```
+
+As you can see the merge is successfully. WoW!.
+
+Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-git-repos-with-persisting-commit-history)
+
+
