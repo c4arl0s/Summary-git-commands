@@ -622,4 +622,8 @@ As you can see the merge is successfully. WoW!.
 
 Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-git-repos-with-persisting-commit-history)
 
+# [16. Reset only one file]()
+
+![Screen Shot 2022-02-01 at 9 42 52](https://user-images.githubusercontent.com/24994818/152000807-c7d0d2ec-40df-4eb4-a619-14758d134052.png)
+
 
