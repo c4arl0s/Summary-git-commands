@@ -1,6 +1,6 @@
-# [go back to Overview]()
+# [go back to Overview](https://github.com/c4arl0s)
 
-# [Summary-git-commands]()
+# [Summary-git-commands](https://github.com/c4arl0s/Summary-git-commands#go-back-to-overview)
 
 # [2. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
@@ -546,7 +546,7 @@ git commit-tree treeID -p parentID
 ```
 Create a New commit object from the given tree object and parent commit. Returns the ID of the new commit object.
 
-# [14. Quick References taken from other references]()
+# [14. Quick References taken from other references](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 Console output:
 
@@ -556,7 +556,7 @@ $ git branch -m old-name-branch new-name-branch
 
 Rename a branch
 
-# [15. Merging 2 git reporsitories into One, keeping history]()
+# [15. Merging 2 git reporsitories into One, keeping history](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 1. Create a Merge-2-Unrelated-Projects directory
 2. Inside Merge-2-Unrelated-Projects clone both repostories, Example: trad3 and DictEnEsScript
@@ -622,8 +622,26 @@ As you can see the merge is successfully. WoW!.
 
 Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-git-repos-with-persisting-commit-history)
 
-# [16. Reset only one file]()
+# [16. Reset only one file](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 ![Screen Shot 2022-02-01 at 9 42 52](https://user-images.githubusercontent.com/24994818/152000807-c7d0d2ec-40df-4eb4-a619-14758d134052.png)
+
+# [17. Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
+
+1. After executing the command merge, lets say that you are working on a branch and it is needed to merge new updates to your work:
+
+```console
+git merge main
+```
+
+2. Your console is going to say that there is merge conflics, then you invoke vimdiff as:
+
+```console
+git mergetool --tool=vimdiff
+```
+
+3. Once you finish editing all the files that contains conflicts, save and create a new commit.
+
+4. Make sure that all is up to date.
 
 
