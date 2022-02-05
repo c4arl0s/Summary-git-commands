@@ -21,9 +21,9 @@
 17. [Set mergetool]()
 18. [18. Use vimdiff to solve conflicts]()
 
-# [1. 
+# [1. Quick Reference]() 
 
-# [2. Quick Reference - The basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
+# [2. Quick Reference - The Basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
 $ git init
@@ -68,7 +68,7 @@ $ git config --global user.email <email>
 Define the author email to be used in all repositories.
 
 
-# [3. Quick References](https://github.com/c4arl0s/3UndoingChangesRysGitTutorial#3-undoing-changes-rys-git-tutorial---content)
+# [3. Quick Reference - Undoing Changes](https://github.com/c4arl0s/3UndoingChangesRysGitTutorial#3-undoing-changes-rys-git-tutorial---content)
 
 ```console
 $ git checkout commitID
@@ -100,7 +100,7 @@ $ git reset --hard / git clean -f
 ```
 Permanently undo uncommitted changes.
 
-# [4. Quick Reference](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
+# [4. Quick Reference - Branches I](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 ```console
 $ git branch
@@ -144,7 +144,7 @@ $ git push origin --delete <remote-branch-to-remove>
 
 This flag allows you to delete a remote branch. (--delete)
 
-# [5. Quick Reference](https://github.com/c4arl0s/5BranchesIIRysGitTutorial#5-branches-ii---content)
+# [5. Quick Reference - Branches II](https://github.com/c4arl0s/5BranchesIIRysGitTutorial#5-branches-ii---content)
 
 ```console
 $ git commit -a -m "messageToCommit"
@@ -158,7 +158,7 @@ $ git branch -D branchName
 
 Force the removal of an unmerged branch (be careful: it will be lost forever).
 
-# [6. Quick References](https://github.com/c4arl0s/6RebasingRysGitTutorial#6-rebasing---content)
+# [6. Quick Reference - Rebasing](https://github.com/c4arl0s/6RebasingRysGitTutorial#6-rebasing---content)
 
 ```console
 $ git rebase newBase
@@ -190,7 +190,7 @@ $ git merge --no-ff branchName
 ```
 Force a merge commit even if Git could do a fast-forward merge.
 
-# [Using Interactive Rebase](https://github.com/c4arl0s/6Rebasing#6-rebasing---content)
+# [7. Quick Reference - Rewriting History](https://github.com/c4arl0s/6Rebasing#6-rebasing---content)
 
 In this case that I am going to document I found that I wanted to commit in my history a commit which contains a work that I didn't want to lose. So first, I tried to rebase main with  C1 and C2, but C1 had merge conflicts with the last commit on main branch.
 
@@ -289,7 +289,7 @@ I used to do `git reset HEAD~` to include insignificant changes in the last comm
 6. Finally merge the functional branch: `git merge functionalBrancg`
 7. Remember: with git you don't miss any information.
 
-# [8. Quick Reference](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
+# [8. Quick Reference - Remotes](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
 
 ```console
 $ git clone <remotePath>
@@ -344,7 +344,7 @@ $ git push <remoteName> <tagName>
 Push a tag to another repository
 
 
-# [8. Use an old repository to push the current branch to another repository in Github](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
+# [Use an old repository to push the current branch to another repository in Github](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
 
 1. Create a repository on github, name: RepositoryOnGithub
 2. Navigate to the original repository you want to use
@@ -365,7 +365,7 @@ $ git push -f https://github.com/c4arl0s/RepositoryOnGithub.git master:main
 $ git clone https://github.com/c4arl0s/RepositoryOnGithub.git
 ```
 
-# [9. Quick Reference](https://github.com/c4arl0s/9CentralizedWorkflowsRysGitTutorial#9-centralized-workflows-rysgit-tutorial---content)
+# [9. Quick Reference - Centralized Workflows](https://github.com/c4arl0s/9CentralizedWorkflowsRysGitTutorial#9-centralized-workflows-rysgit-tutorial---content)
 
 ```console
 $ git init --bare <repositoryName>
@@ -377,7 +377,10 @@ $ git remote rm <remoteName>
 ```
 Remove the specified remote from your book-marked connections.
 
-# [11. Quick Reference](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
+# [10. Quick Reference - Distributed Workflows](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
+
+
+# [11. Quick Reference - Patch Workflows](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
 
 ```console
 $ git format-patch branchName
@@ -390,7 +393,7 @@ $ git am < patchFile
 Apply a patch to the current branch
 
 
-# [12. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
+# [12. Quick Reference - Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
 $ git archive branchName --format=zip --output=fileName
@@ -460,7 +463,7 @@ Now each commit you will not be able to add any `.DS_Store` file.
 
 > If you already add a .DS_Store file in your repo, you have to delete it manually.
 
-# [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
+# [How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 You can create a pull request on your own project just pushing your branch
 
@@ -529,7 +532,7 @@ rm 'Projects/LabStep2CreateOutletsAndActionsTwoButtons/.DS_Store'
 rm 'Projects/LabStep3AddCodeForYourActionsTwoButtons/.DS_Store'
 ```
 
-# [13. Quick Reference](https://github.com/c4arl0s/13PlumbingRysGitTutorial#13-plumbing---content)
+# [13. Quick Reference - Plumbing](https://github.com/c4arl0s/13PlumbingRysGitTutorial#13-plumbing---content)
  
 ```console
 $ git cat-file type objectID
