@@ -2,6 +2,28 @@
 
 # [Summary-git-commands](https://github.com/c4arl0s/Summary-git-commands#go-back-to-overview)
 
+<<<<<<< Updated upstream
+1. [Quick Reference]()
+2. [Quick Reference - The Basics]()
+3. [Quick Reference - Undoing Changes]()
+4. [Quick Reference - Branches I]()
+5. [Quick Reference - Branches II]()
+6. [Quick Reference - Rebasing]()
+7. [Quick Reference - Rewriting History]()
+8. [Quick Reference - Remotes]()
+9. [Quick Reference - Centralized Workflows]()
+10. [Quick Reference - Distributed Workflows]()
+11. [Quick Reference - Patch Workflows]()
+12. [Quick Reference - Tips and Tricks]()
+13. [Quick Reference - Plumbing]()
+14. [Rename a branch]()
+15. [Merging 2 git reporsitories into One, keeping history]()
+16. [Reset only one file]()
+17. [Set mergetool]()
+18. [18. Use vimdiff to solve conflicts]()
+
+# [1. Quick Reference]() 
+=======
 1. [Quick Reference](https://github.com/c4arl0s/Summary-git-commands#1-quick-reference)
 2. [Quick Reference - The Basics](https://github.com/c4arl0s/Summary-git-commands#2-quick-reference---the-basics)
 3. [Quick Reference - Undoing Changes](https://github.com/c4arl0s/Summary-git-commands#3-quick-reference---undoing-changes)
@@ -22,6 +44,7 @@
 18. [Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#18-use-vimdiff-to-solve-conflicts)
 
 # [1. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
+>>>>>>> Stashed changes
 
 # [2. Quick Reference - The Basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
