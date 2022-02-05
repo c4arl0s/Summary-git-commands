@@ -2,7 +2,28 @@
 
 # [Summary-git-commands](https://github.com/c4arl0s/Summary-git-commands#go-back-to-overview)
 
-# [2. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
+1. [Quick Reference]()
+2. [Quick Reference - The Basics]()
+3. [Quick Reference - Undoing Changes]()
+4. [Quick Reference - Branches I]()
+5. [Quick Reference - Branches II]()
+6. [Quick Reference - Rebasing]()
+7. [Quick Reference - Rewriting History]()
+8. [Quick Reference - Remotes]()
+9. [Quick Reference - Centralized Workflows]()
+10. [Quick Reference - Distributed Workflows]()
+11. [Quick Reference - Patch Workflows]()
+12. [Quick Reference - Tips and Tricks]()
+13. [Quick Reference - Plumbing]()
+14. [Rename a branch]()
+15. [Merging 2 git reporsitories into One, keeping history]()
+16. [Reset only one file]()
+17. [Set mergetool]()
+18. [18. Use vimdiff to solve conflicts]()
+
+# [1. 
+
+# [2. Quick Reference - The basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
 $ git init
@@ -546,7 +567,7 @@ git commit-tree treeID -p parentID
 ```
 Create a New commit object from the given tree object and parent commit. Returns the ID of the new commit object.
 
-# [14. Quick References taken from other references](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
+# [14. Rename a branch](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 Console output:
 
@@ -626,7 +647,13 @@ Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-gi
 
 ![Screen Shot 2022-02-01 at 9 42 52](https://user-images.githubusercontent.com/24994818/152000807-c7d0d2ec-40df-4eb4-a619-14758d134052.png)
 
-# [17. Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
+# [17. Set mergetool]()
+
+```console
+git config --global merge.tool vimdiff
+```
+
+# [18. Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 1. After executing the command merge, lets say that you are working on a branch and it is needed to merge new updates to your work:
 
