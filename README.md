@@ -23,6 +23,34 @@
 
 # [1. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
+```console
+git config --global user.name "c4arl0s"
+```
+
+```console
+git config --global user.email c.santiago.cruz@example.com
+```
+
+```console
+git config --global core.editor vim
+```
+
+```console
+touch ~/.git-message.txt; echo "subject line" > ~/.git-message.txt; echo "What happened" >> ~/.git-message.txt;
+```
+
+```console
+git config --global commit.template ~/.git-message.txt
+```
+
+```console
+echo "*~" > ~/.gitignore_global; echo ".DS_Store" >> ~/.gitignore_global
+```
+
+```console
+git config --global core.excludesfile ~/.gitignore_global
+```
+
 # [2. Quick Reference - The Basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
