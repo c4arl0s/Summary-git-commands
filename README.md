@@ -54,43 +54,43 @@ git config --global core.excludesfile ~/.gitignore_global
 # [2. Quick Reference - The Basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
-$ git init
+git init
 ```
 
 Create a git repository in the current folder.
 
 ```console
-$ git status
+git status
 ```
 
 View the status of each file in a repository.
 
 ```console
-$ git add fileName
+git add fileName
 ```
 
 Stage a file for the next commit.
 
 ```console
-$ git commit
+git commit
 ```
 
 Commit the staged files with a descriptive message.
 
 ```console
-$ git log
+git log
 ```
 
 View a repository's commit history.
 
 ```console
-$ git config --global user.name "<nameOfTheUser>"
+git config --global user.name "<nameOfTheUser>"
 ```
 
 Define the author name to be used in all repositories.
 
 ```console
-$ git config --global user.email <email>
+git config --global user.email <email>
 ```
 
 Define the author email to be used in all repositories.
@@ -99,75 +99,75 @@ Define the author email to be used in all repositories.
 # [3. Quick Reference - Undoing Changes](https://github.com/c4arl0s/3UndoingChangesRysGitTutorial#3-undoing-changes-rys-git-tutorial---content)
 
 ```console
-$ git checkout commitID
+git checkout commitID
 ```
 View a previous commit.
 
 ```console
-$ git tag -a tagName -m "description"
+git tag -a tagName -m "description"
 ```
 Create an annotated tag pointing to the most recent commit.
 
 ```console
-$ git revert commitID
+git revert commitID
 ```
 Undo the specified commit by applying a new commit.
 
 ```console
-$ git reset --hard
+git reset --hard
 ```
 Reset tracked files to match the most recent commit.
 
 ```console
-$ git clean -f
+git clean -f
 ```
 Remove untracked files.
 
 ```console
-$ git reset --hard / git clean -f
+git reset --hard / git clean -f
 ```
 Permanently undo uncommitted changes.
 
 # [4. Quick Reference - Branches I](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 ```console
-$ git branch
+git branch
 ```
 
 List all branches.
 
 ```console
-$ git branch <branchName>
+git branch <branchName>
 ```
 
 Create a new branch using the current working directory as its base.
 
 ```console
-$ git checkout <branchName>
+git checkout <branchName>
 ```
 
 Make the working directory and the HEAD match the specified branch.
 
 ```console
-$ git merge <branchName>
+git merge <branchName>
 ```
 
 Merge a branch into the checked-out branch.
 
 ```console
-$ git branch -d <branchName>
+git branch -d <branchName>
 ```
 
 Delete branchName
 
 ```console
-$ git rm <fileName>
+git rm <fileName>
 ```
 
 Remove a file from the working directory (if applicable) and stop tracking the file.
 
 ```console
-$ git push origin --delete <remote-branch-to-remove>
+git push origin --delete <remote-branch-to-remove>
 ```
 
 This flag allows you to delete a remote branch. (--delete)
@@ -175,13 +175,13 @@ This flag allows you to delete a remote branch. (--delete)
 # [5. Quick Reference - Branches II](https://github.com/c4arl0s/5BranchesIIRysGitTutorial#5-branches-ii---content)
 
 ```console
-$ git commit -a -m "messageToCommit"
+git commit -a -m "messageToCommit"
 ```
 
 Stage all tracked files and commit the snapshot using the specified message.
 
 ```console
-$ git branch -D branchName
+git branch -D branchName
 ```
 
 Force the removal of an unmerged branch (be careful: it will be lost forever).
@@ -189,32 +189,32 @@ Force the removal of an unmerged branch (be careful: it will be lost forever).
 # [6. Quick Reference - Rebasing](https://github.com/c4arl0s/6RebasingRysGitTutorial#6-rebasing---content)
 
 ```console
-$ git rebase newBase
+git rebase newBase
 ```
 Move the current branch's commits to the tip of new-base, which can be either a branch name or a commit ID.
 
 ```console
-$ git rebase -i newBase
+git rebase -i newBase
 ```
 Perform an interactive rebase and select actions for each commit.
 
 ```console
-$ git commit --amend
+git commit --amend
 ```
 Add staged changes to the most recent commit instead of creating a new one.
 
 ```console
-$ git rebase --continue
+git rebase --continue
 ```
 Continue a rebase after amending a commit.
 
 ```console
-$ git rebase abort
+git rebase abort
 ```
 Abandon the current interactive rebase and return the repository to its former state.
 
 ```console
-$ git merge --no-ff branchName
+git merge --no-ff branchName
 ```
 Force a merge commit even if Git could do a fast-forward merge.
 
@@ -279,27 +279,27 @@ pick d32d526 commit-6
 # [7. Quick Reference](https://github.com/c4arl0s/7RewritingHistoryRysGitTutorial#7-rewriting-history-rys-git-tutorial---content)
 
 ```console
-$ git reflog
+git reflog
 ```
 ```console
-$ git reset --mixed HEAD~n
+git reset --mixed HEAD~n
 ```
 Move the HEAD backward n commits, but do not change the working directory
 
 ```console
-$ git reset --hard HEAD~n
+git reset --hard HEAD~n
 ```
 Move the HEAD backward n commits, and change the working directory to match.
 
 
 ```console
-$ git log since..until
+git log since..until
 ```
 Display the commits reachable from until but not from since. These parameters can be either commit ID's o branch names.
 
 
 ```console
-$ git log --stat
+git log --stat
 ```
 Include extra information about altered files in the log output.
 
@@ -320,54 +320,54 @@ I used to do `git reset HEAD~` to include insignificant changes in the last comm
 # [8. Quick Reference - Remotes](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
 
 ```console
-$ git clone <remotePath>
+git clone <remotePath>
 ```
 Create a copy of a remote Git repository
 
 ```console
-$ git remote
+git remote
 ```
 List remote repositories.
 
 
 ```console
-$ git remote add <remoteName> <remotePath>
+git remote add <remoteName> <remotePath>
 ```
 Add a remote repository
 
 
 ```console
-$ git fetch <remoteName>
+git fetch <remoteName>
 ```
 Download remote branch information, but do not merge anything
 
 ```console
-$ git merge <remoteName>/<branchName>
+git merge <remoteName>/<branchName>
 ```
 Merge a remote branch into the checked-out branch
 
 ```console
-$ git branch -r
+git branch -r
 ```
 List remote branches
 
 ```console
-$ git push <remoteName> <branchName>
+git push <remoteName> <branchName>
 ```
 Push a local branch to another repository
 
 ```console
-$ git branch -r
+git branch -r
 ```
 List remote branches.
 
 ```console
-$ git push <remoteName> <branchName>
+git push <remoteName> <branchName>
 ```
 Push a local branch to another repository
 
 ```console
-$ git push <remoteName> <tagName>
+git push <remoteName> <tagName>
 ```
 Push a tag to another repository
 
@@ -378,30 +378,30 @@ Push a tag to another repository
 2. Navigate to the original repository you want to use
 
 ```console
-$ cd /path/to/original/repository
+cd /path/to/original/repository
 ```
 
 2. Push the master or main branch, force to delete the trash you create after creating it.
 
 ```console
-$ git push -f https://github.com/c4arl0s/RepositoryOnGithub.git master:main
+git push -f https://github.com/c4arl0s/RepositoryOnGithub.git master:main
 ```
 
 3. Clone RepositoryOnGithub repository. It will contain all the files and history of the original repository.
 
 ```console
-$ git clone https://github.com/c4arl0s/RepositoryOnGithub.git
+git clone https://github.com/c4arl0s/RepositoryOnGithub.git
 ```
 
 # [9. Quick Reference - Centralized Workflows](https://github.com/c4arl0s/9CentralizedWorkflowsRysGitTutorial#9-centralized-workflows-rysgit-tutorial---content)
 
 ```console
-$ git init --bare <repositoryName>
+git init --bare <repositoryName>
 ```
 Create a Git repository, but omit the working directory
 
 ```console
-$ git remote rm <remoteName>
+git remote rm <remoteName>
 ```
 Remove the specified remote from your book-marked connections.
 
@@ -411,12 +411,12 @@ Remove the specified remote from your book-marked connections.
 # [11. Quick Reference - Patch Workflows](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
 
 ```console
-$ git format-patch branchName
+git format-patch branchName
 ```
 Create a patch for each commit contained in the current branch but not in branchName. You can also specify a commit ID instead of branchName
 
 ```console
-$ git am < patchFile
+git am < patchFile
 ```
 Apply a patch to the current branch
 
@@ -424,7 +424,7 @@ Apply a patch to the current branch
 # [12. Quick Reference - Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
-$ git archive branchName --format=zip --output=fileName
+git archive branchName --format=zip --output=fileName
 ```
 Export a single snapshot to a ZIP archive called fileName
 
@@ -478,7 +478,7 @@ Create a shortcut for a command and store it in the global configuration file
 # [How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
-$ echo .DS_Store >> ~/.gitignore_global
+echo .DS_Store >> ~/.gitignore_global
 ```
 
 then:
@@ -498,7 +498,7 @@ You can create a pull request on your own project just pushing your branch
 Console output:
 
 ```console
-$ git push origin <nameOfTheBranch>
+git push origin <nameOfTheBranch>
 ```
 
 Then on Github will appear the message that you can generate a pull request, follow the instructions and ask for the pull request, someone in the project then can merge your branch on main or develop branch.
@@ -516,8 +516,8 @@ Once you did push (your buddy)  a branch to the repository, you can fetch the br
 1. Step 1: From your project repository, bring in the changes and test.
 
 ```console
-$ git fetch origin
-$ git checkout -b CSC/13-how-to-fetch-a-branch-and-merge-Only-Test origin/CSC/13-how-to-fetch-a-branch-and-merge
+git fetch origin
+git checkout -b CSC/13-how-to-fetch-a-branch-and-merge-Only-Test origin/CSC/13-how-to-fetch-a-branch-and-merge
 ```
 
 > In this case I had to create another branch with different name in order to test the branch that it is on `origin` (because I have not buddy :-( )
@@ -527,14 +527,14 @@ $ git checkout -b CSC/13-how-to-fetch-a-branch-and-merge-Only-Test origin/CSC/13
 3. Step 3: Merge the changes and update on GitHub.
 
 ```console
-$ git checkout master
-$ git merge --no-ff CSC/13-how-to-fetch-a-branch-and-merge
+git checkout master
+git merge --no-ff CSC/13-how-to-fetch-a-branch-and-merge
 ```
 
 4. Step 4: Push the current branch (master) to origin.
 
 ```console
-$ git push origin master
+git push origin master
 ```
 
 # [Remove .DS_Store files recursively](https://github.com/c4arl0s/12TipsAndTricks#12-tips-and-tricks---content)
@@ -563,17 +563,17 @@ rm 'Projects/LabStep3AddCodeForYourActionsTwoButtons/.DS_Store'
 # [13. Quick Reference - Plumbing](https://github.com/c4arl0s/13PlumbingRysGitTutorial#13-plumbing---content)
  
 ```console
-$ git cat-file type objectID
+git cat-file type objectID
 ```
 Display the specified object, where type is one of commit, tree, blob, or tag.
 
 ```console
-$ git cat-file -t objectID
+git cat-file -t objectID
 ```
 Output the type of the specified object.
 
 ```console
-$ git ls-tree treeID
+git ls-tree treeID
 ```
 Display a pretty version of the specified tree objects.
 
@@ -603,7 +603,7 @@ Create a New commit object from the given tree object and parent commit. Returns
 Console output:
 
 ```console
-$ git branch -m old-name-branch new-name-branch
+git branch -m old-name-branch new-name-branch
 ```
 
 Rename a branch
@@ -616,7 +616,7 @@ Rename a branch
 4. Type this command:
 
 ```console
-$ filter-branch --index-filter \ 
+filter-branch --index-filter \ 
 'git ls-files -s | sed "s-control+v, TAB\"-&trad3/-" |
 GIT_INDEX_FILE=$GIT_INDEX_FILE.new \
 git update-index --index-info && 
@@ -628,20 +628,20 @@ mv "$GIT_INDEX_FILE.new" "$GIT_INDEX_FILE"' HEAD
 5. Create a new repo, where first and second project are located, in this case I will call it DictEnEs (shorter)
 
 ```console
-$ mkdir DictEnEs
+mkdir DictEnEs
 ```
 
 Then: 
 
 ```console
-$ cd DictEnEs; git init
+cd DictEnEs; git init
 ```
 
 4. Add the 2 repos as remote repos for the new "DictEnEs" 
 
 ```console
-$ git remote add --fetch trad3 ../trad3
-$ git remote add --fetch 
+git remote add --fetch trad3 ../trad3
+git remote add --fetch 
 DictEnEsScript ../DictEnEsScript
 ```
 
@@ -654,20 +654,20 @@ git merge trad3/master --allow-unrelated-histories
 6. Take a look and see that the log is present:
 
 ```console
-$ git log
+git log
 ```
 
 7. Move these new files into a new directory to avoid conflicts, `mkdir OldTrad3Repository` and move all files.
 8. Create a new commit with these new files
 
 ```console
-$ git add .; git commit -m "add files that comes from old trad3 repository"
+git add .; git commit -m "add files that comes from old trad3 repository"
 ```
 
 9. Now merge the files that come from the second repository
 
 ```console
-$ git merge DictEnEsScript/master --allow-unrelated-histories
+git merge DictEnEsScript/master --allow-unrelated-histories
 ```
 
 As you can see the merge is successfully. WoW!.
