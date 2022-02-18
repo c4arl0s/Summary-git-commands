@@ -676,7 +676,9 @@ Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-gi
 
 # [16. Reset only one file](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
-![Screen Shot 2022-02-01 at 9 42 52](https://user-images.githubusercontent.com/24994818/152000807-c7d0d2ec-40df-4eb4-a619-14758d134052.png)
+```console
+git restore fineName
+```
 
 # [17. Set mergetool]()
 
