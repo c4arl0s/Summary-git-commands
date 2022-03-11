@@ -20,6 +20,7 @@
 16. [Reset only one file](https://github.com/c4arl0s/Summary-git-commands#16-reset-only-one-file)
 17. [Set mergetool](https://github.com/c4arl0s/Summary-git-commands#17-set-mergetool)
 18. [Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#18-use-vimdiff-to-solve-conflicts)
+19. [Update Github token](https://github.com/c4arl0s/Summary-git-commands#19-update-github-token)
 
 # [1. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
@@ -680,7 +681,7 @@ Thank you to [Medhat Dawoud Tutorial](https://medhatdawoud.net/blog/merging-2-gi
 git restore fineName
 ```
 
-# [17. Set mergetool]()
+# [17. Set mergetool](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
 
 ```console
 git config --global merge.tool vimdiff
@@ -704,4 +705,12 @@ git mergetool --tool=vimdiff
 
 4. Make sure that all is up to date.
 
+# 19. [Update Github token](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
+
+<img width="219" alt="Screen Shot 2022-03-11 at 6 19 52 a m" src="https://user-images.githubusercontent.com/24994818/157866481-beaf64ab-0f14-43f9-b1f1-234ee1d0608e.png">
+<img width="222" alt="Screen Shot 2022-03-11 at 6 20 07 a m" src="https://user-images.githubusercontent.com/24994818/157866497-abfad782-48d6-42e7-a3fe-d18a3b7142d5.png">
+<img width="300" alt="Screen Shot 2022-03-11 at 6 20 18 a m" src="https://user-images.githubusercontent.com/24994818/157866506-8e67a77a-5dcd-4b25-81a3-11b736cb2773.png">
+<img width="318" alt="Screen Shot 2022-03-11 at 6 20 45 a m" src="https://user-images.githubusercontent.com/24994818/157866516-7d968f92-6448-4a0b-ae48-aef94b6b0b09.png">
+
+If you lost the current tokens, create a new one, and update your repository access.
 
