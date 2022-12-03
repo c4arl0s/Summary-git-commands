@@ -21,6 +21,7 @@
 17. [Set mergetool](https://github.com/c4arl0s/Summary-git-commands#17-set-mergetool)
 18. [Use vimdiff to solve conflicts](https://github.com/c4arl0s/Summary-git-commands#18-use-vimdiff-to-solve-conflicts)
 19. [Update Github token](https://github.com/c4arl0s/Summary-git-commands#19-update-github-token)
+20. [Create a remote repository from a local repository using gh command](https://github.com/c4arl0s/Summary-git-commands#20-create-a-remote-repository-from-a-local-repository-using-gh-command)
 
 # [1. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
@@ -713,4 +714,10 @@ git mergetool --tool=vimdiff
 <img width="318" alt="Screen Shot 2022-03-11 at 6 20 45 a m" src="https://user-images.githubusercontent.com/24994818/157866516-7d968f92-6448-4a0b-ae48-aef94b6b0b09.png">
 
 If you lost the current tokens, create a new one, and update your repository access.
+
+# [20. Create a remote repository from a local repository using gh command](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands)
+
+1. Authenticate if necessary: `gh auth login`
+2. Start using git: `git init`
+3. Create repository: `gh repo create`
 
