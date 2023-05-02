@@ -24,7 +24,7 @@
 20. [Create a remote repository from a local repository using gh command]()
 21. [Add a repository inside a repository](https://github.com/c4arl0s/Summary-git-commands#21-add-a-repository-inside-a-repository)
 
-# [1. Quick Reference](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
+# [1. Quick Reference](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
 git config --global user.name "c4arl0s"
@@ -54,7 +54,7 @@ echo "*~" > ~/.gitignore_global; echo ".DS_Store" >> ~/.gitignore_global
 git config --global core.excludesfile ~/.gitignore_global
 ```
 
-# [2. Quick Reference - The Basics](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
+# [2. Quick Reference - The Basics](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see Complete topic](https://github.com/c4arl0s/2TheBasicsRysGitTutorial#2-the-basics---content)
 
 ```console
 git init
@@ -99,7 +99,8 @@ git config --global user.email <email>
 Define the author email to be used in all repositories.
 
 
-# [3. Quick Reference - Undoing Changes](https://github.com/c4arl0s/3UndoingChangesRysGitTutorial#3-undoing-changes-rys-git-tutorial---content)
+# [3. Quick Reference - Undoing Changes](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see Complete topic](https://github.com/c4arl0s/3UndoingChangesRysGitTutorial#3-undoing-changes-rys-git-tutorial---content)
+
 
 ```console
 git checkout commitID
@@ -131,7 +132,7 @@ git reset --hard / git clean -f
 ```
 Permanently undo uncommitted changes.
 
-# [4. Quick Reference - Branches I](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
+# [4. Quick Reference - Branches I](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/4BranchesIRysGitTutorial#4-branches-i-rys-git-tutorial---content)
 
 ```console
 git branch
@@ -175,7 +176,7 @@ git push origin --delete <remote-branch-to-remove>
 
 This flag allows you to delete a remote branch. (--delete)
 
-# [5. Quick Reference - Branches II](https://github.com/c4arl0s/5BranchesIIRysGitTutorial#5-branches-ii---content)
+# [5. Quick Reference - Branches II](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Click to see topic](https://github.com/c4arl0s/5BranchesIIRysGitTutorial#5-branches-ii---content)
 
 ```console
 git commit -a -m "messageToCommit"
@@ -189,7 +190,7 @@ git branch -D branchName
 
 Force the removal of an unmerged branch (be careful: it will be lost forever).
 
-# [6. Quick Reference - Rebasing](https://github.com/c4arl0s/6RebasingRysGitTutorial#6-rebasing---content)
+# [6. Quick Reference - Rebasing](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/6RebasingRysGitTutorial#6-rebasing---content)
 
 ```console
 git rebase newBase
@@ -221,7 +222,7 @@ git merge --no-ff branchName
 ```
 Force a merge commit even if Git could do a fast-forward merge.
 
-# [7. Quick Reference - Rewriting History](https://github.com/c4arl0s/6Rebasing#6-rebasing---content)
+# [7. Quick Reference - Rewriting History](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/6Rebasing#6-rebasing---content)
 
 In this case that I am going to document I found that I wanted to commit in my history a commit which contains a work that I didn't want to lose. So first, I tried to rebase main with  C1 and C2, but C1 had merge conflicts with the last commit on main branch.
 
@@ -279,11 +280,12 @@ pick d32d526 commit-6
 
 5. Git will apply all changes and will open again your editor to merge the three commit messages. You can modify your commit messages or leave it as it is (if so, the commit messages of all commits will be concatenated).
 
-# [7. Quick Reference](https://github.com/c4arl0s/7RewritingHistoryRysGitTutorial#7-rewriting-history-rys-git-tutorial---content)
+# [7. Quick Reference](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/7RewritingHistoryRysGitTutorial#7-rewriting-history-rys-git-tutorial---content)
 
 ```console
 git reflog
 ```
+
 ```console
 git reset --mixed HEAD~n
 ```
@@ -292,14 +294,13 @@ Move the HEAD backward n commits, but do not change the working directory
 ```console
 git reset --hard HEAD~n
 ```
-Move the HEAD backward n commits, and change the working directory to match.
 
+Move the HEAD backward n commits, and change the working directory to match.
 
 ```console
 git log since..until
 ```
 Display the commits reachable from until but not from since. These parameters can be either commit ID's o branch names.
-
 
 ```console
 git log --stat
@@ -320,7 +321,7 @@ I used to do `git reset HEAD~` to include insignificant changes in the last comm
 6. Finally merge the functional branch: `git merge functionalBrancg`
 7. Remember: with git you don't miss any information.
 
-# [8. Quick Reference - Remotes](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
+# [8. Quick Reference - Remotes](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content) [Tap to see topic]()
 
 ```console
 git clone <remotePath>
@@ -374,7 +375,6 @@ git push <remoteName> <tagName>
 ```
 Push a tag to another repository
 
-
 # [Use an old repository to push the current branch to another repository in Github](https://github.com/c4arl0s/8RemotesRysGitTutorial#8-remotes-rys-git-tutorial---content)
 
 1. Create a repository on github, name: RepositoryOnGithub
@@ -396,7 +396,7 @@ git push -f https://github.com/c4arl0s/RepositoryOnGithub.git master:main
 git clone https://github.com/c4arl0s/RepositoryOnGithub.git
 ```
 
-# [9. Quick Reference - Centralized Workflows](https://github.com/c4arl0s/9CentralizedWorkflowsRysGitTutorial#9-centralized-workflows-rysgit-tutorial---content)
+# [9. Quick Reference - Centralized Workflows](https://github.com/c4arl0s/9CentralizedWorkflowsRysGitTutorial#9-centralized-workflows-rysgit-tutorial---content) [Tap to see topic]()
 
 ```console
 git init --bare <repositoryName>
@@ -408,10 +408,9 @@ git remote rm <remoteName>
 ```
 Remove the specified remote from your book-marked connections.
 
-# [10. Quick Reference - Distributed Workflows](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
+# [10. Quick Reference - Distributed Workflows](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
 
-
-# [11. Quick Reference - Patch Workflows](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
+# [11. Quick Reference - Patch Workflows](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/11PatchWorkflowsRysGitTutorial#11-patch-workflows---content)
 
 ```console
 git format-patch branchName
@@ -423,8 +422,7 @@ git am < patchFile
 ```
 Apply a patch to the current branch
 
-
-# [12. Quick Reference - Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
+# [12. Quick Reference - Tips and Tricks](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
 git archive branchName --format=zip --output=fileName
@@ -563,7 +561,7 @@ rm 'Projects/LabStep2CreateOutletsAndActionsTwoButtons/.DS_Store'
 rm 'Projects/LabStep3AddCodeForYourActionsTwoButtons/.DS_Store'
 ```
 
-# [13. Quick Reference - Plumbing](https://github.com/c4arl0s/13PlumbingRysGitTutorial#13-plumbing---content)
+# [13. Quick Reference - Plumbing](https://github.com/c4arl0s/Summary-git-commands#summary-git-commands) [Tap to see topic](https://github.com/c4arl0s/13PlumbingRysGitTutorial#13-plumbing---content)
  
 ```console
 git cat-file type objectID
